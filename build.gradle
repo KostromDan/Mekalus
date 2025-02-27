@@ -4,6 +4,12 @@ plugins {
 	id 'maven-publish'
 }
 
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
 loom {
 	silentMojangMappingsLicense()
 	accessWidenerPath = file("src/main/resources/iris.accesswidener")
