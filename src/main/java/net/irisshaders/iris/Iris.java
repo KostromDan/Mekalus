@@ -122,13 +122,14 @@ public class Iris {
 		}
 	}
 
-    public static void loadShaderpackWhenPossible() {
-        loadPackWhenPossible = true;
-    }
+	public static void loadShaderpackWhenPossible() {
+		loadPackWhenPossible = true;
+	}
 
-    public static boolean isPackInUseQuick() {
-        return pipelineManager.getPipelineNullable() instanceof IrisRenderingPipeline;
-    }
+	public static boolean isPackInUseQuick() {
+		return pipelineManager.getPipelineNullable() instanceof IrisRenderingPipeline;
+	}
+
 	public void onKeyRegister(RegisterKeyMappingsEvent event) {
 		event.register(reloadKeybind);
 		event.register(toggleShadersKeybind);
